@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot>
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/arm</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+  <!-- Debug Gravity 
+  <gazebo reference="base_link">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link01">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link12">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link23">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link34">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link45">
+    <gravity>False</gravity>
+  </gazebo>
+  <gazebo reference="link56">
+    <gravity>False</gravity>
+  </gazebo> 
+-->
+
+</robot>

@@ -1,0 +1,7 @@
+<launch>
+	<!--bringup gazebo states-->
+	<include file="$(find arm_gazebo)/launch/arm_bringup_gazebo.launch" />
+	<!-- moveit launch file -->
+  	<include file="$(find arms_moveit)/launch/moveit_planning_execution.launch" /> 
+
+</launch>

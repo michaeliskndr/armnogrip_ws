@@ -1,0 +1,8 @@
+prefix=/home/mro/arm_catkin_ws/install
+
+Name: armv2_control
+Description: Description of armv2_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mro/arm_catkin_ws/install/lib 
+Requires: 

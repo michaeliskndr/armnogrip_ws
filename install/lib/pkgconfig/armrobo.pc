@@ -1,0 +1,8 @@
+prefix=/home/mro/arm_catkin_ws/install
+
+Name: armrobo
+Description: Description of armrobo
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/mro/arm_catkin_ws/install/lib 
+Requires: 

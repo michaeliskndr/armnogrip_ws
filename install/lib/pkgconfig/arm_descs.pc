@@ -1,0 +1,8 @@
+prefix=/home/mro/arm_catkin_ws/install
+
+Name: arm_descs
+Description: Description of arm_descs
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/mro/arm_catkin_ws/install/lib 
+Requires: 

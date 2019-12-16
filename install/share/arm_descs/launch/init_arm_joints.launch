@@ -1,0 +1,9 @@
+<launch>
+    ########################################
+    # Load arm joint and gripper joint names
+    ########################################
+    <arg name="names_config_file" default="$(find arm_descs)/config/joint_names_arm_descs.yaml"/>
+    <include file="$(find arm_components_name_manager)/launch/init_params.launch">
+        <arg name="names_config_file" default="$(arg names_config_file)"/>
+    </include>
+</launch>

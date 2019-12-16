@@ -1,0 +1,8 @@
+prefix=/home/mro/armnogrip_ws/devel
+
+Name: arms_urdf
+Description: Description of arms_urdf
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/mro/armnogrip_ws/devel/lib 
+Requires: 

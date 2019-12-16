@@ -1,0 +1,31 @@
+<launch>
+  <arg name="run_trajectory" default="true"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="paused" value="true"/>
+  </include>
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro --inorder '$(find arm_descs)/robots/arm.xacro'" />
+
+  <node
+    name="tf_footprint_base"
+    pkg="tf"
+    type="static_transform_publisher"
+    args="0 0 0 0 0 0 base_link base_footprint 40" />
+  <node
+    name="spawn_model"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-urdf -model arm -param robot_description"
+    output="screen" />
+  <node
+    name="fake_joint_calibration"
+    pkg="rostopic"
+    type="rostopic"
+    args="pub /calibrated std_msgs/Bool true" />
+
+  <include file="$(find arm_descs)/launch/arm_simulation_control.launch">
+    <arg name="run_trajectory" value="$(arg run_trajectory)"/>
+  </include>
+</launch>

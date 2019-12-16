@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mro/arm_catkin_ws/install/setup.sh

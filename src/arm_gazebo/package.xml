@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package>
+  <name>arm_gazebo</name>
+  <version>0.0.0</version>
+  <description>The arm_gazebo package</description>
+
+  <maintainer email="michaeliskndr@gmail.com">michael iskandar</maintainer>
+
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/arm_gazebo</url> -->
+
+
+  <author email="michaeliskndr@gmail.com">michael iskandar</author> 
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_joint_control</build_depend>
+
+
+
+  <run_depend>gazebo_joint_control</run_depend>
+
+  <run_depend>gazebo_plugins</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>arm_control</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

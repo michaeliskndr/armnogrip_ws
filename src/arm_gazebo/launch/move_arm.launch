@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="move_group_python" pkg="arm_gazebo" type="move_arm.py" respawn="false" output="screen">
+  </node>
+
+</launch>

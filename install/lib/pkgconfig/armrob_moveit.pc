@@ -1,0 +1,8 @@
+prefix=/home/mro/arm_catkin_ws/install
+
+Name: armrob_moveit
+Description: Description of armrob_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/mro/arm_catkin_ws/install/lib 
+Requires: 
