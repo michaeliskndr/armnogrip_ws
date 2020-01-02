@@ -7,7 +7,8 @@
 - Gazebo
 
 ## Usage
-```cd yourrepo/armnogrip_ws
+```
+cd yourrepo/armnogrip_ws
 source devel/setup.bash
 ```
 
