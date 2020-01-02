@@ -1,6 +1,11 @@
 # 6 DOF Arm Robot
 
 
+## Requirements
+Ubuntu 16.04
+ROS Kinetic
+Gazebo
+
 ## Usage
 cd yourrepo/armnogrip_ws
 source devel/setup.bash
